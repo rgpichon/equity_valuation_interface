@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stock Analysis Platform
 
 A comprehensive stock analysis platform that combines DCF valuation, technical analysis, and analyst estimates into a unified dashboard interface.
@@ -183,3 +184,7 @@ For questions or issues:
 ---
 
 **Note**: This platform combines multiple analysis methodologies into a unified interface. The DCF valuations, technical signals, and analyst estimates should be used together to form a comprehensive investment thesis.
+=======
+# equity_valuation_interface
+Equity valuation interface combining DCF valuation, technicals, and analyst consensus with scenario &amp; sensitivity analysis
+>>>>>>> 53731c4412d8a9f169929113d7221ed08a65ec37
