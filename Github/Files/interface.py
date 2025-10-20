@@ -18,13 +18,9 @@ from typing import Dict, Optional, Any, Iterable
 import warnings
 warnings.filterwarnings('ignore')
 
-# Import our analysis modules with error handling
-try:
-    from analysis_combo import AnalysisCombo, StockAnalysis, load_company_fundamentals
-    from enhanced_comprehensive_data import EnhancedComprehensiveStockData
-except ImportError as e:
-    st.error(f"Error importing analysis modules: {e}")
-    st.stop()
+# Import our analysis modules
+from analysis_combo import AnalysisCombo, StockAnalysis, load_company_fundamentals #type: ignore
+from enhanced_comprehensive_data import EnhancedComprehensiveStockData
 
 # Robust imports with fallbacks
 try:
@@ -1951,13 +1947,8 @@ class StockAnalysisInterface:
 
 def main():
     """Main function to run the Streamlit interface"""
-    try:
-        interface = StockAnalysisInterface()
-        interface.run()
-    except Exception as e:
-        st.error(f"Application error: {str(e)}")
-        st.error("Please check the logs for more details.")
-        st.stop()
+    interface = StockAnalysisInterface()
+    interface.run()
 
 
 if __name__ == "__main__":
