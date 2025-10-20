@@ -4,6 +4,7 @@ A comprehensive stock analysis platform featuring DCF valuation, technical analy
 
 ## 🚀 Quick Start
 
+### Local Installation
 ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -11,6 +12,11 @@ pip install -r requirements.txt
 # Run the application
 streamlit run interface.py
 ```
+
+### Live Demo
+🌐 **Try the live application**: [Streamlit Cloud Demo](https://equity-valuation-interface.streamlit.app/)
+
+*Note: The live demo is deployed on Streamlit Cloud and updates automatically with the latest code.*
 
 ## 📊 Main Application
 
