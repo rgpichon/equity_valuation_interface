@@ -2,9 +2,22 @@
 
 A comprehensive stock analysis platform featuring DCF valuation, technical analysis, and an interactive Streamlit dashboard.
 
-## 🚀 Quick Start
+## 🌐 **LIVE DEMO - Try It Now!**
 
-### Local Installation
+**🎯 [**CLICK HERE TO TEST THE APPLICATION**](https://equity-valuation-interface.streamlit.app/)**
+
+Experience the full functionality:
+- 📊 **Interactive DCF Analysis** with Bear/Base/Bull scenarios
+- 📈 **Real-time Technical Analysis** with advanced indicators
+- 🎛️ **Professional Dashboard** with multiple views
+- 💹 **Live Market Data** integration
+- 📋 **Export Capabilities** for analysis results
+
+*The live demo is deployed on Streamlit Cloud and updates automatically with the latest code.*
+
+## 🚀 Local Installation (Optional)
+
+If you prefer to run it locally:
 ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -12,11 +25,6 @@ pip install -r requirements.txt
 # Run the application
 streamlit run interface.py
 ```
-
-### Live Demo
-🌐 **Try the live application**: [Streamlit Cloud Demo](https://equity-valuation-interface.streamlit.app/)
-
-*Note: The live demo is deployed on Streamlit Cloud and updates automatically with the latest code.*
 
 ## 📊 Main Application
 
@@ -110,10 +118,22 @@ Key Python packages required:
 5. **Explore scenarios** and sensitivity analysis
 6. **Export results** as needed
 
+## 🎯 **Ready to Test?**
+
+**👉 [**LAUNCH THE LIVE APPLICATION NOW**](https://equity-valuation-interface.streamlit.app/)**
+
+Try these features:
+- 🔍 **Select any stock** from the dropdown
+- 📊 **Run comprehensive analysis** with one click
+- 🎲 **Explore Bear/Base/Bull scenarios** in DCF analysis
+- 📈 **View real-time charts** with technical indicators
+- ⚖️ **Compare multiple stocks** side-by-side
+- 📋 **Export results** as CSV files
+
 ## ⚠️ Disclaimer
 
 This tool is for educational and research purposes only. Not intended as investment advice.
 
 ---
 
-**Main Application**: Run `streamlit run interface.py` to start the dashboard
+**Main Application**: Run `streamlit run interface.py` to start the dashboard locally, or **[test the live version](https://equity-valuation-interface.streamlit.app/)**
