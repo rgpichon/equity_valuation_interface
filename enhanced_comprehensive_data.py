@@ -333,9 +333,11 @@ class MultiSourceDataFetcher:
             if data.empty:
                 return None
             
-            # Standardize column names
+            # Standardize column names and select only needed columns
             data = data.reset_index()
-            data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+            # Keep only the essential OHLCV columns, drop Dividends and Stock Splits if present
+            essential_columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+            data = data[essential_columns]
             
             # Store in cache
             self.cache.store_ohlcv_data(ticker, data, 'yfinance')
@@ -503,8 +505,19 @@ class MultiSourceDataFetcher:
             df['date'] = pd.to_datetime(df['date'])
             df = df.sort_values('date')
             
-            # Standardize column names
-            df.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+            # Standardize column names and select only needed columns
+            column_mapping = {
+                'date': 'Date',
+                'open': 'Open', 
+                'high': 'High',
+                'low': 'Low',
+                'close': 'Close',
+                'volume': 'Volume'
+            }
+            # Rename columns that exist, keep only essential ones
+            df = df.rename(columns=column_mapping)
+            essential_columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+            df = df[essential_columns]
             
             # Store in cache
             self.cache.store_ohlcv_data(ticker, df, 'fmp')
