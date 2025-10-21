@@ -285,7 +285,7 @@ class MultiSourceDataFetcher:
                 rate_limit_per_minute=5,
                 rate_limit_per_day=250,
                 priority=2,
-                api_key="ZhY4S0yksINsUhFNdaePTZEm7AVu6QPe",  # Your FMP key
+                api_key=os.getenv('FMP_API_KEY'),  # Get from environment variable
                 base_url='https://financialmodelingprep.com/api/v3'
             ),
             'polygon': APIConfig(
@@ -293,7 +293,7 @@ class MultiSourceDataFetcher:
                 rate_limit_per_minute=5,
                 rate_limit_per_day=100,
                 priority=3,
-                api_key="MgyXk4ou0jP2AVGjb6J3tCtq6iSi5WTp",  # Your Polygon key
+                api_key=os.getenv('POLYGON_API_KEY'),  # Get from environment variable
                 base_url='https://api.polygon.io/v2'
             )
         }

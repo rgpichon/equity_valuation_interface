@@ -22,9 +22,18 @@ If you prefer to run it locally:
 # Install dependencies
 pip install -r requirements.txt
 
+# Optional: Set up API keys for enhanced data (copy .env.example to .env)
+cp .env.example .env
+# Edit .env with your API keys
+
 # Run the application
 streamlit run interface.py
 ```
+
+### 🔑 API Keys (Optional)
+The application works without API keys using yfinance as the default data source. For enhanced data:
+- **FMP API**: Get free key at [Financial Modeling Prep](https://financialmodelingprep.com/developer/docs)
+- **Polygon.io API**: Get free key at [Polygon.io](https://polygon.io/)
 
 ## 📊 Main Application
 
